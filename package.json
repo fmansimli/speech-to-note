@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "build": "vue-cli-service build",
+    "deploy:surge":"npm run build && mv dist/index.html dist/200.html && surge dist speech-to-note.surge.sh"
   },
   "dependencies": {
     "axios": "^0.21.1",
