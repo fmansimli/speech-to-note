@@ -5,7 +5,7 @@
       <p>Really into NodeJS + Vue.js ❤️</p>
       <div id="err">
         <p>This site is for testing purposes only and is under development.
-          That's why it's only optimized on chrome (windows). Errors and bugs are normal 👋</p>
+          That's why it's only optimized on chrome browser. Errors and bugs are normal 👋</p>
       </div>
       <p id="flw">You can follow me from the accounts below</p>
       <hr>

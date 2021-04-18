@@ -2,7 +2,7 @@
   <div id="home">
       <div id="err">
         <p>This site is for testing purposes only and is under development.
-          That's why it's only optimized on chrome (windows). Errors and bugs are normal 👋</p>
+          That's why it's only optimized on chrome browser. Errors and bugs are normal 👋</p>
       </div>
       <p>Phone::<a href="tel:+994503899971">+994503899971</a></p>
       <p>email:: <a href="mailto:farid.mansimli@faridmansim.com">farid.mansimli@faridmansim.com</a> </p>
