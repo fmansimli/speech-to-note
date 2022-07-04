@@ -36,7 +36,7 @@ const actions = {
         }
     },
     initNotes:async({commit})=>{
-        const db_url="https://speech-note-9ebc6-default-rtdb.firebaseio.com/";
+        const db_url="https://speech-to-text-adec7-default-rtdb.firebaseio.com/";
         try{
             const resp = await axios.get(db_url+`${user.state.activeUser.localId}.json`);
             if(!resp.data){
