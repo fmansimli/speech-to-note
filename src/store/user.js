@@ -6,7 +6,7 @@ const state = {
         email:'',
         expiresIn:null
     },
-    apiKey:'AIzaSyCzwgN-8HjCfTCQJ1ihRwslQMIPM3bqDUo',
+    apiKey:'AIzaSyBwHNAr5vWMiuHMznZAARPZVNmiy5JDOdY',
 }
 
 const getters = {
@@ -33,7 +33,7 @@ const mutations = {
 const actions = {
     login : async({commit,dispatch},loginData)=>{
         try{
-            const login_url ="https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyCzwgN-8HjCfTCQJ1ihRwslQMIPM3bqDUo";
+            const login_url ="https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyBwHNAr5vWMiuHMznZAARPZVNmiy5JDOdY";
             const resp =await axios.post(login_url,loginData);
             const {email,localId,refreshToken,idToken,expiresIn} = resp.data;
             const authData = {
@@ -53,7 +53,7 @@ const actions = {
     },
     register:async({},regData)=>{
         try{
-            const signup_url= "https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyCzwgN-8HjCfTCQJ1ihRwslQMIPM3bqDUo";
+            const signup_url= "https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyBwHNAr5vWMiuHMznZAARPZVNmiy5JDOdY";
             await axios.post(signup_url,regData);
             router.replace('/login');
         }
