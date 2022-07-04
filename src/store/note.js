@@ -25,7 +25,7 @@ const mutations = {
 const actions = {
     
     postNote:async({commit},note)=>{
-        const db_url="https://speech-note-9ebc6-default-rtdb.firebaseio.com/";
+        const db_url="https://speech-to-text-adec7-default-rtdb.firebaseio.com/";
         try{
             const resp = await  axios.post(db_url+`${user.state.activeUser.localId}.json`,note);
             note.key=resp.data.name;
@@ -55,7 +55,7 @@ const actions = {
     } ,
     deleteAll:async({commit})=>{
         try{
-            const db_url="https://speech-note-9ebc6-default-rtdb.firebaseio.com/";
+            const db_url="https://speech-to-text-adec7-default-rtdb.firebaseio.com/";
             const resp = await axios.delete(db_url+`${user.state.activeUser.localId}.json`);
             commit('vupdateNotes',[]);
         }catch(err){
@@ -64,7 +64,7 @@ const actions = {
     } ,
     vremoveNoteById:async({commit},id)=>{
        try{
-            const db_url="https://speech-note-9ebc6-default-rtdb.firebaseio.com/";
+            const db_url="https://speech-to-text-adec7-default-rtdb.firebaseio.com/";
             const resp = await axios.delete(db_url+`${user.state.activeUser.localId}/${id}.json`);
             commit('vremoveNote',id);
         }catch(err){
